@@ -18,6 +18,7 @@
 
 App::uses('CakeFixtureManager', 'TestSuite/Fixture');
 App::uses('CakeTestFixture', 'TestSuite/Fixture');
+App::uses('TestTimeHelper', 'TestSuite');
 
 /**
  * CakeTestCase class
@@ -141,13 +142,13 @@ abstract class CakeTestCase extends \PHPUnit\Framework\TestCase {
 	}
 
 /**
- * See CakeTestSuiteDispatcher::date()
+ * See TestTimeHelper::date()
  *
  * @param string $format format to be used.
  * @return string
  */
 	public static function date($format = 'Y-m-d H:i:s') {
-		return CakeTestSuiteDispatcher::date($format);
+		return TestTimeHelper::date($format);
 	}
 
 // @codingStandardsIgnoreStart PHPUnit overrides don't match CakePHP
