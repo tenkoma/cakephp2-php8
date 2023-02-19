@@ -91,6 +91,11 @@ class CakeTestFixture {
 	public $canUseMemory = true;
 
 /**
+ * @var CakeSchema
+ */
+	public $Schema = null;
+
+/**
  * Instantiate the fixture.
  *
  * @throws CakeException on invalid datasource usage.
