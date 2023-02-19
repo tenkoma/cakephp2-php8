@@ -67,6 +67,13 @@ abstract class CakeTestCase extends \PHPUnit\Framework\TestCase {
 	protected $_pathRestore = array();
 
 /**
+ * Default datasource to use (Set by CakeFixtureManager)
+ *
+ * @var DataSource
+ */
+	public $db = null;
+
+/**
  * Called when a test case method is about to start (to be overridden when needed.)
  *
  * @param string $method Test method about to get executed.
