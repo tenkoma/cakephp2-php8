@@ -121,4 +121,4 @@ jobs:
         run: cp ./.github/workflows/configs/database.php ./app/Config/
 
       - name: Run Tests
-        run: ./vendors/bin/phpunit --stderr --verbose lib/Cake/Test/Case/AllTestsTest.php
+        run: ./vendors/bin/phpunit --stderr --verbose --debug lib/Cake/Test/Case/AllTestsTest.php
