@@ -29,6 +29,8 @@ jobs:
             db-type: sqlite
           - php-version: '8.1'
             db-type: mysql
+          - php-version: '8.2'
+            db-type: mysql
 
     services:
       mysql:
@@ -119,4 +121,4 @@ jobs:
         run: cp ./.github/workflows/configs/database.php ./app/Config/
 
       - name: Run Tests
-        run: ./vendors/bin/phpunit --stderr --verbose lib/Cake/Test/Case/AllTestsTest.php
+        run: ./vendors/bin/phpunit --stderr --verbose --debug lib/Cake/Test/Case/AllTestsTest.php
