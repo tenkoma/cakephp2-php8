@@ -60,6 +60,11 @@ abstract class CakeTestCase extends \PHPUnit\Framework\TestCase {
 	protected $_configure = array();
 
 /**
+ * @var DboSource
+ */
+	public $db;
+
+/**
  * Path settings to restore at the end of the test.
  *
  * @var array
